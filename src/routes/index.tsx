@@ -2,7 +2,7 @@
 import { Link, createFileRoute } from "@tanstack/react-router";
 import { PageShell } from "@/components/PageShell";
 const logoAsset = { url: "/favicon.png" };
-const heroImg = "https://picsum.photos/seed/patuchain/1200/600";
+const heroImg = "/hero..jpg";
 
 function useCountdown(target: Date) {
   const [now, setNow] = useState(() => new Date());
