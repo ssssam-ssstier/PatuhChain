@@ -2,7 +2,7 @@
 import { Link, createFileRoute } from "@tanstack/react-router";
 import { PageShell } from "@/components/PageShell";
 const logoAsset = { url: "/favicon.png" };
-const heroImg = "/hero..jpg";
+const heroImg = "/hero.png";
 
 function useCountdown(target: Date) {
   const [now, setNow] = useState(() => new Date());
@@ -88,12 +88,12 @@ const STEPS = [
 ];
 
 const VALUES = [
-  { icon: "â±ï¸", title: "Hemat waktu", desc: "ROPA dan penanda DPIA disusun otomatis oleh AI, bukan berminggu-minggu secara manual." },
-  { icon: "ðŸ’°", title: "Hemat biaya", desc: "Langganan bulanan jauh lebih terjangkau daripada konsultan kepatuhan penuh waktu." },
-  { icon: "ðŸŽ¯", title: "Minim kesalahan", desc: "Pengecekan berjalan terus-menerus dan tenggat selalu diingatkan otomatis." },
-  { icon: "ðŸ”—", title: "Bukti tahan uji", desc: "Catatan di blockchain tidak bisa diubah diam-diam, siap saat diaudit." },
-  { icon: "ðŸ§©", title: "Satu platform", desc: "Data pribadi, keberlanjutan, KBLI, dan pajak dalam satu dasbor." },
-  { icon: "ðŸ›¡ï¸", title: "Aman by design", desc: "Data pribadi tidak disimpan di blockchain â€” hanya sidik digital (hash). Manusia menyetujui keputusan penting." },
+  { icon: "⏱", title: "Hemat waktu", desc: "ROPA dan penanda DPIA disusun otomatis oleh AI, bukan berminggu-minggu secara manual." },
+  { icon: "⛃⛂", title: "Hemat biaya", desc: "Langganan bulanan jauh lebih terjangkau daripada konsultan kepatuhan penuh waktu." },
+  { icon: "𖣨", title: "Minim kesalahan", desc: "Pengecekan berjalan terus-menerus dan tenggat selalu diingatkan otomatis." },
+  { icon: "✔", title: "Bukti tahan uji", desc: "Catatan di blockchain tidak bisa diubah diam-diam, siap saat diaudit." },
+  { icon: "❶", title: "Satu platform", desc: "Data pribadi, keberlanjutan, KBLI, dan pajak dalam satu dasbor." },
+  { icon: "🔒︎", title: "Aman by design", desc: "Data pribadi tidak disimpan di blockchain â€” hanya sidik digital (hash). Manusia menyetujui keputusan penting." },
 ];
 
 function HomePage() {
@@ -105,21 +105,21 @@ function HomePage() {
           <div>
             <div className="inline-flex items-center gap-2 rounded-full border border-teal-light/30 bg-white/5 px-3 py-1 text-xs font-medium text-teal-light">
               <span className="h-2 w-2 rounded-full bg-primary animate-chain-pulse" />
-              AI Agentik Ã— Blockchain untuk Kepatuhan Indonesia
+              AI Agentik Blockchain untuk Kepatuhan Indonesia
             </div>
             <h1 className="mt-5 font-display text-4xl font-bold leading-tight sm:text-5xl">
               Kepatuhan aturan baru, <span className="text-gradient-teal">otomatis dan terbukti</span>
             </h1>
             <p className="mt-5 max-w-lg text-base leading-relaxed text-white/70">
               PatuhChain membantu perusahaan memenuhi PP 33/2026 (UU PDP), PSPK 1 &amp; 2, dan KBLI
-              2025 â€” dari pemetaan data otomatis hingga bukti kepatuhan yang tidak bisa diubah diam-diam.
+              2025 dari pemetaan data otomatis hingga bukti kepatuhan yang tidak bisa diubah diam-diam.
             </p>
             <div className="mt-8 flex flex-wrap gap-3">
               <Link
                 to="/demo"
                 className="inline-flex items-center rounded-xl bg-primary px-6 py-3 text-sm font-semibold text-primary-foreground shadow-lg shadow-primary/30 transition-transform hover:scale-[1.03]"
               >
-                Coba Demo Interaktif â†’
+                Coba Demo Interaktif
               </Link>
               <Link
                 to="/kontak"
@@ -139,7 +139,7 @@ function HomePage() {
             />
             <div className="absolute -bottom-4 left-4 rounded-xl border border-white/10 bg-navy-deep/90 px-4 py-3 text-xs backdrop-blur">
               <span className="font-semibold text-teal-light">ROPA tersusun otomatis</span>
-              <div className="text-white/60">dari berminggu-minggu â†’ hitungan menit</div>
+              <div className="text-white/60">dari berminggu-minggu hitungan menit</div>
             </div>
           </div>
         </div>
@@ -180,7 +180,7 @@ function HomePage() {
             ))}
           </div>
           <p className="mt-6 text-center text-sm text-muted-foreground">
-            Data pribadi tidak disimpan di blockchain â€” yang dicatat hanya sidik digital (hash) dokumen dan keputusan.
+            Data pribadi tidak disimpan di blockchain yang dicatat hanya sidik digital (hash) dokumen dan keputusan.
           </p>
         </div>
       </section>
@@ -210,8 +210,8 @@ function HomePage() {
           <img src={logoAsset.url} alt="Logo PatuhChain" className="mx-auto h-14 w-14 rounded-xl bg-white/95 object-contain p-1" />
           <h2 className="mt-5 font-display text-3xl font-bold">Siap patuh tanpa drama?</h2>
           <p className="mx-auto mt-3 max-w-xl text-sm text-white/70">
-            Dirancang untuk perusahaan menengah dan startup digital â€” e-commerce, fintech, kesehatan,
-            pendidikan, dan SaaS â€” yang mengelola banyak data pelanggan dengan tim kecil.
+            Dirancang untuk perusahaan menengah dan startup digital ”e-commerce, fintech, kesehatan,
+            pendidikan, dan SaaS” yang mengelola banyak data pelanggan dengan tim kecil.
           </p>
           <div className="mt-8 flex flex-wrap justify-center gap-3">
             <Link

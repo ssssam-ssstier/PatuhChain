@@ -146,7 +146,7 @@ function RopaSimulator() {
       <div>
         {!generated ? (
           <div className="flex h-full min-h-72 flex-col items-center justify-center rounded-2xl border border-dashed border-border bg-card p-10 text-center">
-            <div className="text-4xl">🤖</div>
+            <div className="text-4xl"></div>
             <h3 className="mt-4 font-display text-lg font-semibold text-foreground">Hasil simulasi akan muncul di sini</h3>
             <p className="mt-2 max-w-sm text-sm text-muted-foreground">
               Atur profil perusahaan di sebelah kiri, lalu jalankan agen AI. Dalam kondisi nyata,
@@ -443,9 +443,9 @@ function LedgerDemo() {
 /* ---------------- Page ---------------- */
 
 const TABS = [
-  { id: "ropa", label: "📄 Simulasi ROPA", desc: "Lihat bagaimana agen AI menyusun draf ROPA" },
-  { id: "score", label: "📊 Skor Kepatuhan", desc: "Ukur kesiapan kepatuhan perusahaan Anda" },
-  { id: "ledger", label: "🔗 Buku Besar Blockchain", desc: "Bukti kepatuhan yang tidak bisa diubah diam-diam" },
+  { id: "ropa", label: "Simulasi ROPA", desc: "Lihat bagaimana agen AI menyusun draf ROPA" },
+  { id: "score", label: "Skor Kepatuhan", desc: "Ukur kesiapan kepatuhan perusahaan Anda" },
+  { id: "ledger", label: "Buku Besar Blockchain", desc: "Bukti kepatuhan yang tidak bisa diubah diam-diam" },
 ] as const;
 
 type TabId = (typeof TABS)[number]["id"];
