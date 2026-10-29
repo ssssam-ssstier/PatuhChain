@@ -1,4 +1,4 @@
-import { useState } from "react";
+﻿import { useState } from "react";
 import { Link, useRouterState } from "@tanstack/react-router";
 const logoAsset = { url: "/favicon.png" };
 
@@ -21,7 +21,7 @@ export function Navbar() {
         <Link to="/" className="flex items-center gap-2.5" onClick={() => setOpen(false)}>
           <img src={logoAsset.url} alt="Logo RegChain" className="h-9 w-9 rounded-lg object-contain" />
           <span className="font-display text-lg font-bold tracking-tight text-foreground">
-            Patuh<span className="text-primary">Chain</span>
+            Reg<span className="text-primary">Chain</span>
           </span>
         </Link>
 
