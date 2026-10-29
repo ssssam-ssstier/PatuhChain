@@ -8,7 +8,7 @@ export function Footer() {
         <div className="grid gap-10 md:grid-cols-4">
           <div className="md:col-span-2">
             <div className="flex items-center gap-2.5">
-              <img src="/favicon.png" alt="Logo PatuhChain" className="h-10 w-10 rounded-lg bg-white/95 object-contain p-0.5" />
+              <img src="/favicon.png" alt="Logo RegChain" className="h-10 w-10 rounded-lg bg-white/95 object-contain p-0.5" />
               <span className="font-display text-xl font-bold text-white">
                 Patuh<span className="text-teal-light">Chain</span>
               </span>
@@ -46,7 +46,7 @@ export function Footer() {
         </div>
 
         <div className="mt-12 flex flex-col items-center justify-between gap-3 border-t border-white/15 pt-6 text-xs text-white/50 sm:flex-row">
-          <span>© {new Date().getFullYear()} PatuhChain. Seluruh hak cipta dilindungi.</span>
+          <span>© {new Date().getFullYear()} RegChain. Seluruh hak cipta dilindungi.</span>
           <span>Data pribadi tidak disimpan di blockchain — hanya sidik digital (hash).</span>
         </div>
       </div>

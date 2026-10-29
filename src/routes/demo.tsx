@@ -1,4 +1,4 @@
-import { useMemo, useState } from "react";
+﻿import { useMemo, useState } from "react";
 import { createFileRoute } from "@tanstack/react-router";
 import { PageShell } from "@/components/PageShell";
 
@@ -42,7 +42,7 @@ function sampleRopa(sektor: string, selected: string[]): RopaRow[] {
     },
     {
       aktivitas: "Deteksi penipuan (otomatis)",
-      dasar: "Kepentingan sah + perlu DPIA ⚠️",
+      dasar: "Kepentingan sah + perlu DPIA âš ï¸",
       data: selected.includes("lokasi") ? "Perilaku, lokasi, perangkat" : "Perilaku, perangkat",
       retensi: "1 tahun",
     },
@@ -50,7 +50,7 @@ function sampleRopa(sektor: string, selected: string[]): RopaRow[] {
   if (sektor === "Kesehatan digital") {
     base.push({
       aktivitas: "Rekam medis elektronik",
-      dasar: "Kewajiban hukum — data sensitif",
+      dasar: "Kewajiban hukum â€” data sensitif",
       data: "Riwayat kesehatan, identitas",
       retensi: "Sesuai Permenkes rekam medis",
     });
@@ -58,7 +58,7 @@ function sampleRopa(sektor: string, selected: string[]): RopaRow[] {
   if (sektor === "Fintech") {
     base.push({
       aktivitas: "Penilaian kelayakan kredit",
-      dasar: "Pelaksanaan kontrak — perlu DPIA ⚠️",
+      dasar: "Pelaksanaan kontrak â€” perlu DPIA âš ï¸",
       data: selected.includes("keuangan") ? "Data keuangan, skoring" : "Data keuangan",
       retensi: "5 tahun",
     });
@@ -139,7 +139,7 @@ function RopaSimulator() {
           onClick={() => setGenerated(true)}
           className="w-full rounded-xl bg-primary px-5 py-3 text-sm font-semibold text-primary-foreground transition-colors hover:bg-primary/90"
         >
-          Jalankan Agen AI →
+          Jalankan Agen AI â†’
         </button>
       </div>
 
@@ -161,18 +161,18 @@ function RopaSimulator() {
                 <div className="mt-1 text-xs text-muted-foreground">Cara manual (draf ROPA)</div>
               </div>
               <div className="rounded-xl border border-primary bg-card p-4 text-center shadow-sm shadow-primary/10">
-                <div className="font-display text-2xl font-bold text-primary">≈{stats.autoMinutes} mnt</div>
+                <div className="font-display text-2xl font-bold text-primary">â‰ˆ{stats.autoMinutes} mnt</div>
                 <div className="mt-1 text-xs text-muted-foreground">Dengan RegChain</div>
               </div>
               <div className="rounded-xl border border-border bg-card p-4 text-center">
-                <div className="font-display text-2xl font-bold text-foreground">−{stats.savings}%</div>
+                <div className="font-display text-2xl font-bold text-foreground">âˆ’{stats.savings}%</div>
                 <div className="mt-1 text-xs text-muted-foreground">Estimasi waktu terhemat</div>
               </div>
             </div>
 
             <div className="overflow-hidden rounded-2xl border border-border bg-card">
               <div className="flex items-center justify-between border-b border-border px-5 py-3">
-                <h4 className="font-display text-sm font-semibold text-foreground">Draf ROPA — {sektor}</h4>
+                <h4 className="font-display text-sm font-semibold text-foreground">Draf ROPA â€” {sektor}</h4>
                 <span className="rounded-full bg-accent px-2.5 py-0.5 text-[11px] font-semibold text-accent-foreground">
                   Status: menunggu persetujuan staf
                 </span>
@@ -300,12 +300,12 @@ function ScoreCalculator() {
         <div className="mt-5 w-full text-left">
           <h4 className="text-sm font-semibold text-foreground">Rekomendasi tindakan</h4>
           {missing.length === 0 ? (
-            <p className="mt-2 text-sm text-muted-foreground">Semua elemen terpenuhi — pertahankan dan pantau terus. 👍</p>
+            <p className="mt-2 text-sm text-muted-foreground">Semua elemen terpenuhi â€” pertahankan dan pantau terus. ðŸ‘</p>
           ) : (
             <ul className="mt-2 space-y-1.5 text-sm text-muted-foreground">
               {missing.slice(0, 4).map((m) => (
                 <li key={m.id} className="flex gap-2">
-                  <span className="text-primary">→</span> Susun/lembagakan: {m.label.toLowerCase()}
+                  <span className="text-primary">â†’</span> Susun/lembagakan: {m.label.toLowerCase()}
                 </li>
               ))}
             </ul>
@@ -343,9 +343,9 @@ type LedgerBlock = {
 };
 
 const LEDGER_ACTIONS = [
-  "ROPA v3 disetujui oleh Dina (Compliance) — hash dokumen dicatat",
+  "ROPA v3 disetujui oleh Dina (Compliance) â€” hash dokumen dicatat",
   "DPIA untuk fitur skoring AI ditandai & draf dibuat",
-  "Kebijakan retensi diperbarui: 10→7 tahun untuk data transaksi",
+  "Kebijakan retensi diperbarui: 10â†’7 tahun untuk data transaksi",
   "Akses agen AI ke tabel pelanggan diberikan izin oleh IT",
   "Laporan kesiapan audit Q1 diekspor dan ditandatangani",
 ];
@@ -356,7 +356,7 @@ function LedgerDemo() {
       index: 0,
       ts: new Date().toLocaleTimeString("id-ID"),
       action: "Genesis: koneksi sistem & pemetaan awal selesai",
-      hash: toHash("genesis-patuchain"),
+      hash: toHash("genesis-regchain"),
       prev: "0".repeat(16),
     },
   ]);
@@ -378,7 +378,7 @@ function LedgerDemo() {
       <div className="flex flex-wrap items-center justify-between gap-3">
         <p className="max-w-xl text-sm text-muted-foreground">
           Klik tombol untuk mencatat keputusan kepatuhan. Setiap blok menyimpan sidik digital (hash)
-          dari isi dan hash blok sebelumnya — <span className="font-medium text-foreground">data pribadi tidak pernah disimpan di sini</span>.
+          dari isi dan hash blok sebelumnya â€” <span className="font-medium text-foreground">data pribadi tidak pernah disimpan di sini</span>.
         </p>
         <div className="flex gap-2">
           <button
@@ -393,7 +393,7 @@ function LedgerDemo() {
               tampering ? "border-destructive bg-destructive/10 text-destructive" : "border-border bg-card text-muted-foreground hover:bg-muted"
             }`}
           >
-            {tampering ? "Pulihkan" : "Coba ubah blok lama 🔓"}
+            {tampering ? "Pulihkan" : "Coba ubah blok lama ðŸ”“"}
           </button>
         </div>
       </div>
@@ -402,7 +402,7 @@ function LedgerDemo() {
         {blocks.map((b, i) => {
           const tamperIdx = Math.max(1, Math.floor(blocks.length / 2));
           const isTampered = tampering && i === tamperIdx;
-          const shownAction = isTampered ? `${b.action} ✏️ (diubah diam-diam)` : b.action;
+          const shownAction = isTampered ? `${b.action} âœï¸ (diubah diam-diam)` : b.action;
           const storedHash = i === 0 ? b.hash : toHash(`${b.prev}|${b.action}|${b.ts}`);
           const shownValid = !isTampered && (i === 0 || storedHash === b.hash);
           return (
@@ -415,11 +415,11 @@ function LedgerDemo() {
                 <div className="min-w-0 flex-1">
                   <p className="text-sm font-medium text-foreground">{shownAction}</p>
                   <p className="mt-0.5 font-mono text-[11px] text-muted-foreground">
-                    #{b.index} · {b.ts} · hash: <span className={shownValid ? "text-primary" : "text-destructive"}>{storedHash.slice(0, 16)}…</span> · prev: {b.prev.slice(0, 10)}…
+                    #{b.index} Â· {b.ts} Â· hash: <span className={shownValid ? "text-primary" : "text-destructive"}>{storedHash.slice(0, 16)}â€¦</span> Â· prev: {b.prev.slice(0, 10)}â€¦
                   </p>
                 </div>
                 <span className={`shrink-0 rounded-full px-2.5 py-1 text-[11px] font-semibold ${shownValid ? "bg-accent text-accent-foreground" : "bg-destructive/15 text-destructive"}`}>
-                  {shownValid ? "✓ Terverifikasi" : "✗ Rantai rusak!"}
+                  {shownValid ? "âœ“ Terverifikasi" : "âœ— Rantai rusak!"}
                 </span>
               </div>
             </div>
@@ -434,7 +434,7 @@ function LedgerDemo() {
         </p>
       )}
       {!tampering && blocks.length === 1 && (
-        <p className="mt-4 text-center text-sm text-muted-foreground">Rantai masih kosong — catat keputusan pertama Anda.</p>
+        <p className="mt-4 text-center text-sm text-muted-foreground">Rantai masih kosong â€” catat keputusan pertama Anda.</p>
       )}
     </div>
   );
@@ -462,8 +462,8 @@ function DemoPage() {
             Rasakan cara RegChain bekerja
           </h1>
           <p className="mt-4 max-w-2xl text-sm text-white/70">
-            Tiga simulasi interaktif yang meniru alur nyata: Hubungkan → Petakan → Setujui →
-            Buktikan. Tidak perlu mendaftar — semuanya berjalan langsung di halaman ini.
+            Tiga simulasi interaktif yang meniru alur nyata: Hubungkan â†’ Petakan â†’ Setujui â†’
+            Buktikan. Tidak perlu mendaftar â€” semuanya berjalan langsung di halaman ini.
           </p>
         </div>
       </section>
@@ -499,16 +499,16 @@ function DemoPage() {
 export const Route = createFileRoute("/demo")({
   head: () => ({
     meta: [
-      { title: "Demo Interaktif — RegChain" },
+      { title: "Demo Interaktif â€” RegChain" },
       {
         name: "description",
         content:
           "Coba simulasi interaktif RegChain: penyusunan draf ROPA oleh agen AI, kalkulator skor kepatuhan, dan buku besar blockchain yang menunjukkan bukti kepatuhan tahan uji.",
       },
-      { property: "og:title", content: "Demo Interaktif — RegChain" },
+      { property: "og:title", content: "Demo Interaktif â€” RegChain" },
       {
         property: "og:description",
-        content: "Simulasi ROPA, skor kepatuhan, dan buku besar blockchain — langsung di halaman ini.",
+        content: "Simulasi ROPA, skor kepatuhan, dan buku besar blockchain â€” langsung di halaman ini.",
       },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
