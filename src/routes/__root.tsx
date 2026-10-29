@@ -78,7 +78,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "RegChain "” Kepatuhan Otomatis Berbasis AI & Blockchain" },
+      { title: "RegChain ” Kepatuhan Otomatis Berbasis AI & Blockchain" },
       {
         name: "description",
         content:
