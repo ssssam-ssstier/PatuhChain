@@ -68,7 +68,7 @@ const STEPS = [
   {
     no: "01",
     title: "Hubungkan",
-    desc: "PatuhChain terhubung ke ERP, CRM, HR, dan dokumen perusahaan dengan izin dari pemilik data.",
+    desc: "RegChain terhubung ke ERP, CRM, HR, dan dokumen perusahaan dengan izin dari pemilik data.",
   },
   {
     no: "02",
@@ -93,7 +93,7 @@ const VALUES = [
   { icon: "𖣨", title: "Minim kesalahan", desc: "Pengecekan berjalan terus-menerus dan tenggat selalu diingatkan otomatis." },
   { icon: "✔", title: "Bukti tahan uji", desc: "Catatan di blockchain tidak bisa diubah diam-diam, siap saat diaudit." },
   { icon: "❶", title: "Satu platform", desc: "Data pribadi, keberlanjutan, KBLI, dan pajak dalam satu dasbor." },
-  { icon: "🔒︎", title: "Aman by design", desc: "Data pribadi tidak disimpan di blockchain â€” hanya sidik digital (hash). Manusia menyetujui keputusan penting." },
+  { icon: "🔒︎", title: "Aman by design", desc: "Data pribadi tidak disimpan di blockchain ” hanya sidik digital (hash). Manusia menyetujui keputusan penting." },
 ];
 
 function HomePage() {
@@ -111,7 +111,7 @@ function HomePage() {
               Kepatuhan aturan baru, <span className="text-gradient-teal">otomatis dan terbukti</span>
             </h1>
             <p className="mt-5 max-w-lg text-base leading-relaxed text-white/70">
-              PatuhChain membantu perusahaan memenuhi PP 33/2026 (UU PDP), PSPK 1 &amp; 2, dan KBLI
+              RegChain membantu perusahaan memenuhi PP 33/2026 (UU PDP), PSPK 1 &amp; 2, dan KBLI
               2025 dari pemetaan data otomatis hingga bukti kepatuhan yang tidak bisa diubah diam-diam.
             </p>
             <div className="mt-8 flex flex-wrap gap-3">
@@ -132,7 +132,7 @@ function HomePage() {
           <div className="relative">
             <img
               src={heroImg}
-              alt="Ilustrasi dasbor otomatisasi kepatuhan PatuhChain"
+              alt="Ilustrasi dasbor otomatisasi kepatuhan RegChain"
               width={1024}
               height={1024}
               className="mx-auto w-full max-w-md rounded-3xl border border-white/10 shadow-2xl animate-float-slow"
@@ -207,7 +207,7 @@ function HomePage() {
       {/* Target & pricing teaser */}
       <section className="bg-navy-gradient py-16 text-white md:py-20">
         <div className="mx-auto max-w-6xl px-4 text-center">
-          <img src={logoAsset.url} alt="Logo PatuhChain" className="mx-auto h-14 w-14 rounded-xl bg-white/95 object-contain p-1" />
+          <img src={logoAsset.url} alt="Logo RegChain" className="mx-auto h-14 w-14 rounded-xl bg-white/95 object-contain p-1" />
           <h2 className="mt-5 font-display text-3xl font-bold">Siap patuh tanpa drama?</h2>
           <p className="mx-auto mt-3 max-w-xl text-sm text-white/70">
             Dirancang untuk perusahaan menengah dan startup digital ”e-commerce, fintech, kesehatan,

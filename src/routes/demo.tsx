@@ -162,7 +162,7 @@ function RopaSimulator() {
               </div>
               <div className="rounded-xl border border-primary bg-card p-4 text-center shadow-sm shadow-primary/10">
                 <div className="font-display text-2xl font-bold text-primary">≈{stats.autoMinutes} mnt</div>
-                <div className="mt-1 text-xs text-muted-foreground">Dengan PatuhChain</div>
+                <div className="mt-1 text-xs text-muted-foreground">Dengan RegChain</div>
               </div>
               <div className="rounded-xl border border-border bg-card p-4 text-center">
                 <div className="font-display text-2xl font-bold text-foreground">−{stats.savings}%</div>
@@ -459,7 +459,7 @@ function DemoPage() {
         <div className="mx-auto max-w-6xl px-4">
           <p className="text-sm font-semibold uppercase tracking-widest text-teal-light">Demo Interaktif</p>
           <h1 className="mt-2 max-w-2xl font-display text-4xl font-bold leading-tight">
-            Rasakan cara PatuhChain bekerja
+            Rasakan cara RegChain bekerja
           </h1>
           <p className="mt-4 max-w-2xl text-sm text-white/70">
             Tiga simulasi interaktif yang meniru alur nyata: Hubungkan → Petakan → Setujui →
@@ -499,13 +499,13 @@ function DemoPage() {
 export const Route = createFileRoute("/demo")({
   head: () => ({
     meta: [
-      { title: "Demo Interaktif — PatuhChain" },
+      { title: "Demo Interaktif — RegChain" },
       {
         name: "description",
         content:
-          "Coba simulasi interaktif PatuhChain: penyusunan draf ROPA oleh agen AI, kalkulator skor kepatuhan, dan buku besar blockchain yang menunjukkan bukti kepatuhan tahan uji.",
+          "Coba simulasi interaktif RegChain: penyusunan draf ROPA oleh agen AI, kalkulator skor kepatuhan, dan buku besar blockchain yang menunjukkan bukti kepatuhan tahan uji.",
       },
-      { property: "og:title", content: "Demo Interaktif — PatuhChain" },
+      { property: "og:title", content: "Demo Interaktif — RegChain" },
       {
         property: "og:description",
         content: "Simulasi ROPA, skor kepatuhan, dan buku besar blockchain — langsung di halaman ini.",

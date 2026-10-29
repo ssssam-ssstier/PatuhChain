@@ -96,7 +96,7 @@ function FiturPage() {
           </h1>
           <p className="mt-4 max-w-2xl text-sm leading-relaxed text-white/70">
             Dimulai dari modul kepatuhan data pribadi (PP 33/2026), lalu tumbuh menjadi pusat
-            kepatuhan dan kepercayaan digital — setiap kali aturan baru muncul, PatuhChain siap.
+            kepatuhan dan kepercayaan digital — setiap kali aturan baru muncul, RegChain siap.
           </p>
         </div>
       </section>
@@ -161,13 +161,13 @@ function FiturPage() {
 export const Route = createFileRoute("/fitur")({
   head: () => ({
     meta: [
-      { title: "Fitur — PatuhChain" },
+      { title: "Fitur — RegChain" },
       {
         name: "description",
         content:
           "Agen AI pemetaan data, draf ROPA otomatis, penanda DPIA, buku besar blockchain, dashboard skor kepatuhan, dan peta jalan modul PSPK, KBLI, serta pajak digital.",
       },
-      { property: "og:title", content: "Fitur — PatuhChain" },
+      { property: "og:title", content: "Fitur — RegChain" },
       {
         property: "og:description",
         content: "Satu platform untuk beragam aturan: PP 33/2026, PSPK 1 & 2, KBLI 2025, dan pajak digital.",

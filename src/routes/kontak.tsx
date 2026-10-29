@@ -39,7 +39,7 @@ function KontakPage() {
                 <h2 className="mt-5 font-display text-2xl font-bold text-foreground">Terima kasih, {form.nama || "kak"}!</h2>
                 <p className="mt-2 max-w-md text-sm text-muted-foreground">
                   Permintaan konsultasi untuk {form.perusahaan || "perusahaan Anda"} sudah kami terima.
-                  Tim PatuhChain akan menghubungi {form.email || "email Anda"} dalam 1–2 hari kerja.
+                  Tim RegChain akan menghubungi {form.email || "email Anda"} dalam 1–2 hari kerja.
                 </p>
                 <button
                   onClick={() => setSent(false)}
@@ -134,7 +134,7 @@ function KontakPage() {
 
           <aside className="space-y-6">
             <div className="rounded-2xl border border-border bg-card p-6">
-              <h3 className="font-display font-semibold text-foreground">Tim di balik PatuhChain</h3>
+              <h3 className="font-display font-semibold text-foreground">Tim di balik RegChain</h3>
               <ul className="mt-3 space-y-3 text-sm text-muted-foreground">
                 <li>
                   <span className="font-medium text-foreground">Samuel Halasan Sirait</span>
@@ -167,16 +167,16 @@ function KontakPage() {
 export const Route = createFileRoute("/kontak")({
   head: () => ({
     meta: [
-      { title: "Kontak — PatuhChain" },
+      { title: "Kontak — RegChain" },
       {
         name: "description",
         content:
-          "Minta konsultasi kepatuhan dengan PatuhChain. Tim dari Universitas Brawijaya, Malang — siap membantu perusahaan Anda siap PP 33/2026.",
+          "Minta konsultasi kepatuhan dengan RegChain. Tim dari Universitas Brawijaya, Malang — siap membantu perusahaan Anda siap PP 33/2026.",
       },
-      { property: "og:title", content: "Kontak — PatuhChain" },
+      { property: "og:title", content: "Kontak — RegChain" },
       {
         property: "og:description",
-        content: "Ceritakan kebutuhan kepatuhan Anda — tim PatuhChain akan menindaklanjuti dalam 1–2 hari kerja.",
+        content: "Ceritakan kebutuhan kepatuhan Anda — tim RegChain akan menindaklanjuti dalam 1–2 hari kerja.",
       },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },

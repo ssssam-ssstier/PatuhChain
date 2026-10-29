@@ -122,8 +122,8 @@ function HargaPage() {
 export const Route = createFileRoute("/harga")({
   head: () => ({
     meta: [
-      { title: "Harga — PatuhChain" },
-      { name: "description", content: "Paket langganan PatuhChain: Starter, Business, dan Enterprise. Lebih terjangkau dari konsultan penuh waktu." },
+      { title: "Harga — RegChain" },
+      { name: "description", content: "Paket langganan RegChain: Starter, Business, dan Enterprise. Lebih terjangkau dari konsultan penuh waktu." },
     ],
   }),
   component: HargaPage,

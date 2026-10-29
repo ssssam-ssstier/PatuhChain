@@ -23,7 +23,7 @@ const BLOCKS: Block[] = [
   {
     key: "value",
     title: "Value Propositions",
-    subtitle: "Mengapa memilih PatuhChain",
+    subtitle: "Mengapa memilih RegChain",
     items: [
       { head: "Hemat waktu", desc: "ROPA dan penanda DPIA disusun otomatis oleh AI, bukan berminggu-minggu secara manual." },
       { head: "Hemat biaya", desc: "Langganan bulanan lebih terjangkau daripada konsultan penuh waktu." },
@@ -127,7 +127,7 @@ function BmcPage() {
         <div className="mx-auto max-w-6xl px-4">
           <p className="text-sm font-semibold uppercase tracking-widest text-teal-light">Model Bisnis</p>
           <h1 className="mt-2 max-w-2xl font-display text-4xl font-bold leading-tight">
-            Business Model Canvas PatuhChain
+            Business Model Canvas RegChain
           </h1>
           <p className="mt-4 max-w-2xl text-sm text-white/70">
             Sembilan elemen yang saling terhubung: pelanggan jelas, nilai konkret, pendapatan
@@ -181,16 +181,16 @@ function BmcPage() {
 export const Route = createFileRoute("/bmc")({
   head: () => ({
     meta: [
-      { title: "Model Bisnis (BMC) — PatuhChain" },
+      { title: "Model Bisnis (BMC) — RegChain" },
       {
         name: "description",
         content:
-          "Sembilan elemen Business Model Canvas PatuhChain: segmen pelanggan, proposisi nilai, saluran, hubungan pelanggan, pendapatan, sumber daya, aktivitas, mitra, dan struktur biaya.",
+          "Sembilan elemen Business Model Canvas RegChain: segmen pelanggan, proposisi nilai, saluran, hubungan pelanggan, pendapatan, sumber daya, aktivitas, mitra, dan struktur biaya.",
       },
-      { property: "og:title", content: "Model Bisnis (BMC) — PatuhChain" },
+      { property: "og:title", content: "Model Bisnis (BMC) — RegChain" },
       {
         property: "og:description",
-        content: "Pelanggan jelas, nilai konkret, pendapatan berulang — BMC lengkap PatuhChain.",
+        content: "Pelanggan jelas, nilai konkret, pendapatan berulang — BMC lengkap RegChain.",
       },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },

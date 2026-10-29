@@ -78,14 +78,14 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "PatuhChain — Kepatuhan Otomatis Berbasis AI & Blockchain" },
+      { title: "RegChain — Kepatuhan Otomatis Berbasis AI & Blockchain" },
       {
         name: "description",
         content:
-          "PatuhChain membantu perusahaan Indonesia memenuhi PP 33/2026 (UU PDP), PSPK, dan KBLI 2025 secara otomatis dengan AI agentik dan bukti kepatuhan berbasis blockchain.",
+          "RegChain membantu perusahaan Indonesia memenuhi PP 33/2026 (UU PDP), PSPK, dan KBLI 2025 secara otomatis dengan AI agentik dan bukti kepatuhan berbasis blockchain.",
       },
-      { name: "author", content: "PatuhChain — Universitas Brawijaya" },
-      { property: "og:title", content: "PatuhChain — Kepatuhan Otomatis Berbasis AI & Blockchain" },
+      { name: "author", content: "RegChain — Universitas Brawijaya" },
+      { property: "og:title", content: "regChain — Kepatuhan Otomatis Berbasis AI & Blockchain" },
       {
         property: "og:description",
         content:
