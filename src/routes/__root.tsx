@@ -1,4 +1,4 @@
-﻿import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
+import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import {
   Outlet,
   Link,
@@ -78,14 +78,14 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "RegChain â€” Kepatuhan Otomatis Berbasis AI & Blockchain" },
+      { title: "RegChain "” Kepatuhan Otomatis Berbasis AI & Blockchain" },
       {
         name: "description",
         content:
           "RegChain membantu perusahaan Indonesia memenuhi PP 33/2026 (UU PDP), PSPK, dan KBLI 2025 secara otomatis dengan AI agentik dan bukti kepatuhan berbasis blockchain.",
       },
-      { name: "author", content: "RegChain â€” Universitas Brawijaya" },
-      { property: "og:title", content: "RegChain â€” Kepatuhan Otomatis Berbasis AI & Blockchain" },
+      { name: "author", content: "RegChain "” Universitas Brawijaya" },
+      { property: "og:title", content: "RegChain "” Kepatuhan Otomatis Berbasis AI & Blockchain" },
       {
         property: "og:description",
         content:
